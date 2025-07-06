@@ -89,4 +89,10 @@ router.put('/:id/update', authenticateToken, async (req, res) => {
   }
 });
 
+
+router.post('/logout', authenticateToken, (req, res) => {
+  // For stateless JWT, just tell client to delete token
+  res.status(200).json({ message: 'Logged out successfully' });
+});
+
 module.exports = router;

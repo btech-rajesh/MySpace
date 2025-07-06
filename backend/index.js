@@ -9,7 +9,9 @@ const contactRoutes = require('./routes/contact');
 const postRoutes=require('./routes/post')
 const cloudinary = require('cloudinary').v2;
 
-app.use(cors());
+app.use(cors(
+    
+));
 app.use(express.json());
 
 mongoose.connect(process.env.MONGO_URI)
