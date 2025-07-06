@@ -18,7 +18,7 @@ import SignUp from './Auth/SignUp';
 import AddPost from './MySpace/AddPost';
 import UserDetails from './MySpace/UserDetails';
 import UserPosts from './MySpace/UserPosts';
-import HomeSplit from './components/HomeSplit';
+
 
 function App() {
 
@@ -86,7 +86,7 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-           <Route path="/home" element={<HomeSplit />} />
+        
         <Route path="/login" element={<AuthRoute><LogIn /></AuthRoute>} />
         <Route path="/signup" element={<AuthRoute><SignUp /></AuthRoute>} />
         <Route path="/" element={<ProtectedRoute><Layout /></ProtectedRoute>}>
