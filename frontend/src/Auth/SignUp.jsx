@@ -13,12 +13,12 @@ function SignUp() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post('http://localhost:7125/auth/signup', { 
+      await axios.post('https://myspace-1-cp6a.onrender.com/auth/signup', { 
         name,
         email,
         password,
       });
-
+        
       setSuccessMessage('Account created successfully! Redirecting to login page...');
       setTimeout(() => {
         navigate('/login');

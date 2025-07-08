@@ -14,7 +14,7 @@ function AddContact() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
   const [successMessage, setSuccessMessage] = useState(null);
-  const apiUrl = "http://localhost:7125/";
+  const apiUrl = "https://myspace-1-cp6a.onrender.com/";
   const topRef = useRef(null);
   const isPhoneEmpty = !formData.phone.personal && !formData.phone.work;
 

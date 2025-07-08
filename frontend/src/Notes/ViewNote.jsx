@@ -10,7 +10,7 @@ function ViewNote() {
     const [note, setNote] = useState(null);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
-    const apiUrl = "http://localhost:7125/";
+    const apiUrl = "https://myspace-1-cp6a.onrender.com/";
     const [showDeleteConfirm, setShowDeleteConfirm] = useState(false);
     const [isEditing, setIsEditing] = useState(false);
     const [editedTitle, setEditedTitle] = useState('');

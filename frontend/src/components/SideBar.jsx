@@ -21,7 +21,7 @@ function SideBar() {
     try {
       const token = localStorage.getItem('token');
 
-      await axios.post('http://localhost:7125/auth/logout', {}, {
+      await axios.post('https://myspace-1-cp6a.onrender.com/auth/logout', {}, {
         headers: {
           Authorization: `Bearer ${token}`
         }

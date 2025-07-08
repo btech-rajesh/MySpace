@@ -30,7 +30,7 @@ function UserDetails() {
                 const decodedToken = jwtDecode(token);
                 const userId = decodedToken.userId;
 
-                const response = await axios.get(`http://localhost:7125/auth/${userId}/details`, {
+                const response = await axios.get(`https://myspace-1-cp6a.onrender.com/auth/${userId}/details`, {
                     headers: {
                         Authorization: `Bearer ${token}`,
                     },
@@ -61,7 +61,7 @@ function UserDetails() {
             const decodedToken = jwtDecode(token);
             const userId = decodedToken.userId;
 
-            await axios.put(`http://localhost:7125/auth/${userId}/update`, userData, {
+            await axios.put(`https://myspace-1-cp6a.onrender.com/auth/${userId}/update`, userData, {
                 headers: {
                     Authorization: `Bearer ${token}`,
                 },

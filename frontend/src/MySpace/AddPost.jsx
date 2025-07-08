@@ -11,7 +11,7 @@ function AddPost() {
   const [error, setError] = useState(null);
   const [successMessage, setSuccessMessage] = useState(null);
   const navigate = useNavigate();
-  const apiUrl = "http://localhost:7125/";
+  const apiUrl = "https://myspace-1-cp6a.onrender.com/";
 
   const updateFile = (e) => {
     const selectedFile = e.target.files[0];

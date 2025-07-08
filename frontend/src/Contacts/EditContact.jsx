@@ -17,7 +17,7 @@ function EditContact() {
     const [error, setError] = useState(null);
     const [successMessage, setSuccessMessage] = useState(null);
     const token = localStorage.getItem('token');
-    const apiUrl = "http://localhost:7125/";
+    const apiUrl = "https://myspace-1-cp6a.onrender.com/";
 
     useEffect(() => {
         const fetchContact = async () => {

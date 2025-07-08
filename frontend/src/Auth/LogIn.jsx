@@ -15,7 +15,7 @@ function LogIn() {
     setIsLoading(true);
 
     try {
-      const response = await axios.post('http://localhost:7125/auth/signin', {
+      const response = await axios.post('https://myspace-1-cp6a.onrender.com/auth/signin', {
         email,
         password,
       });
